@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <title>Химическо чистене "Отново като ново" - град Сливен</title>
+        <meta
+            name="description"
+            content="Професионално химическо чистене, пране и парно гладене в гр. Сливен. Експресни поръчки за 2 часа, семейни цени и безкомпромисна грижа за вашите дрехи."
+        />
+
+        <!-- Свързваме CSS файл -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- 1. Навигационен Хедър -->
+        <header class="main-header">
+            <div class="logo">
+                <a href="#"
+                    ><img
+                        src="images/logo.png"
+                        alt="Химическо чистене Чисто като ново"
+                        onerror="
+                            this.onerror = null;
+                            this.src =
+                                'https://placehold.co/180x45/0b57d0/ffffff?text=Чисто+като+ново+Сливен';
+                        "
+                /></a>
+            </div>
+
+            <div class="header-actions">
+                <a
+                    href="https://www.facebook.com/profile.php?id=61591631326639&locale=bg_BG"
+                    target="_blank"
+                    class="fb-btn-header"
+                    aria-label="Последвайте ни във Facebook"
+                >
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                        />
+                    </svg>
+                </a>
+                <a href="tel:+359886104127" class="call-btn">📞 Звънни ни</a>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Отвори менюто"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#aboutus">За нас</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                    <!-- <li>
+                        <a href="tel:+359898454898" class="call-btn"
+                            >📞 Звънни ни</a
+                        >
+                    </li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 2. Hero Секция с фоново изображение и векторно лого -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- Професионално векторно лого за пране над заглавието -->
+                <div class="hero-logo-container">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"
+                            fill="none"
+                        />
+                        <path
+                            d="M18.15 13c-.34-.96-.92-1.81-1.68-2.45L12 6.18l-4.47 4.37c-.76.64-1.34 1.49-1.68 2.45M12 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM12 3a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zm6.36 2.64a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.41-1.41l.71-.7a1 1 0 0 1 1.4-.01zm-10.72 0a1 1 0 0 1 1.41 0l.71.7a1 1 0 1 1-1.41 1.41l-.7-.71a1 1 0 0 1 0-1.4z"
+                        />
+                    </svg> -->
+                    <img
+                        src="images/logo.png"
+                        alt="Химическо чистене Чисто като ново"
+                        class="hero-logo"
+                        onerror="
+                            this.onerror = null;
+                            this.src =
+                                'https://placehold.co/180x45/0b57d0/ffffff?text=Чисто+като+ново+Сливен';
+                        "
+                    />
+                </div>
+                <h1>Химическо чистене – град Сливен</h1>
+                <p>
+                    Продължаваме традицията в безупречната грижа за вашите
+                    дрехи, одеяла, костюми и деликатни тъкани. Професионално
+                    пране и гладене от ново поколение!
+                </p>
+
+                <div class="hero-buttons">
+                    <!--<a href="#calc" class="btn-primary"
+                        >📋 Ценоразпис & Калкулатор</a
+                    >-->
+                    <!--<a href="#contacts" class="btn-secondary"
+                        >📍 Намерете ни на картата</a
+                    >-->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Секция Срокове за изпълнение (Услуги) -->
+        <section class="speed-section" id="services">
+            <h2 class="section-title">Какво предлагаме</h2>
+            <!--<p class="section-subtitle">
+                Изберете най-удобния срок за изпълнение спрямо вашето ежедневие
+                и планове.
+            </p>-->
+            <h3 class="sub-section-title">🧺 Почистване на:</h3>
+        
+        <div class="items-grid">
+            <div class="item-card">
+                <div class="item-icon">🧥</div>
+                <div class="item-text">Всички видове облекла от текстил, гладка кожа, кожа с косъм, велур, еко кожа, гъши пух.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🛋️</div>
+                <div class="item-text">Калъфи за мебели и матраци.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🖼️</div>
+                <div class="item-text">Почистване на щори.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🛏️</div>
+                <div class="item-text">Завивки, спални комплекти, възглавници.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">👗</div>
+                <div class="item-text">Бални и булчински рокли (аксесоарите им се съхраняват без увреждане).</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🧸</div>
+                <div class="item-text">Плюшени играчки, карнавални костюми.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">👔</div>
+                <div class="item-text">Работно облекло.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🧥</div>
+                <div class="item-text">Фолклорни носии.</div>
+            </div>
+            <div class="item-card">
+                <div class="item-icon">🍽️</div>
+                <div class="item-text">Почистване на покривки за хранене.</div>
+            </div>
+        </div>
+
+        <!-- ✨ НОВО: Разделителна линия -->
+        <div class="section-divider"></div>
+
+        <!-- ✨ НОВО: Променено заглавие за подсекция Б (Срокове) за по-добра йерархия -->
+        <h3 class="sub-section-title">⏱️ Срокове за изпълнение</h3>
+
+
+
+
+
+
+            <div class="speed-cards-grid">
+                <div class="speed-card">
+                    <span class="card-icon">⚡</span>
+                    <h3>Супер Експрес (2 часа)</h3>
+                    <p>
+                        Бързо решение за спешни случаи. Дрехите ви са готови за
+                        носене веднага преди важно събитие или делова среща.
+                    </p>
+                </div>
+
+                <div class="speed-card">
+                    <span class="card-icon">🕒</span>
+                    <h3>Бърза поръчка (24 часа)</h3>
+                    <p>
+                        Вашата поръчка ще бъде готова в рамките на точно едно
+                        денонощие, почистена, парно изгладена и пакетирана.
+                    </p>
+                </div>
+
+                <div class="speed-card">
+                    <span class="card-icon">📅</span>
+                    <h3>Стандартна (3 дни)</h3>
+                    <p>
+                        Икономичният вариант за регулярна поддръжка на
+                        всекидневни облекла, одеяла и домашен текстил.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. За нас -->
+         <section class="about-section" id="aboutus">
+        <div class="about-container">
+            <h2 class="section-title">За нас</h2>
+            <p class="section-subtitle">Повече от три десетилетия семейна традиция в грижата за вашия гардероб.</p>
+            
+            <div class="about-grid">
+                <div class="about-text-col">
+                    <h3>Нашата история и мисия</h3>
+                    <p>Химическо чистене „Отново като ново“ съчетава дългогодишния си занаятчийски опит с най-съвременните и екологични технологии в прането и дезинфекцията. Нашата основна мисия е да предоставим на жителите на град Сливен безупречно качество, индивидуално отношение към всяка тъкан и бързина без никакви компромиси.</p>
+                    <p>Вярваме, че всяка дреха изисква специално внимание. Затова подхождаме внимателно към деликатни материи, кожени изделия, официални костюми, бални рокли и тежък домашен текстил. Използваме висок клас немски и италиански препарати, които са нежни към нишките и напълно безвредни за здравето и природата.</p>
+                </div>
+                
+                <div class="about-stats-col">
+                    <div class="stat-card">
+                        <span class="stat-icon">🏆</span>
+                        <div>
+                            <h4>Доказан опит</h4>
+                            <p>Над 20 години професионално обслужване и стотици хиляди изпрани облекла в Сливен.</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🌱</span>
+                        <div>
+                            <h4>Еко съобразност</h4>
+                            <p>Използваме само щадящи околната среда, биоразградими препарати от ново поколение.</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🤝</span>
+                        <div>
+                            <h4>Пълно доверие</h4>
+                            <p>Индивидуален подход към специфичните нужди на всеки клиент и всяка деликатна материя.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 5. Карта и Контакти (Навигацията до Сливен) -->
+        <section class="contacts-section" id="contacts">
+            <h2 class="section-title">Контакти</h2>
+            <p class="section-subtitle">
+                Посетете нашето модерно ателие в град Сливен или се свържете с
+                нас по телефона.
+            </p>
+
+            <div class="contacts-grid">
+                <div class="info-card">
+                    <h3>Информация за ателието</h3>
+
+                    <div class="info-item">
+                        <strong>📍 Адрес</strong>
+                        <p>
+                            гр. Сливен, кв. Българка 71
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>📞 Телефон</strong>
+                        <p>
+                            <a
+                                href="tel:+359898454898"
+                                style="color: #0b57d0; font-weight: 600"
+                                >0886104127</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>🕒 Работно време</strong>
+                        <p>Понеделник - Петък: 08:30 – 18:00 ч.</p>
+                        <p>Събота: 09:00 – 14:00 ч.</p>
+                        <p style="color: #ef4444; font-weight: 500">
+                            Неделя: Почивен ден
+                        </p>
+                    </div>
+
+                    <!-- Този бутон директно ще отвори Google Maps приложението с готов маршрут -->
+                    <a
+                        href="https://www.google.com/maps/dir/?api=1&destination=Химическо+чистене+Фира+Сливен"
+                        target="_blank"
+                        class="maps-action-btn"
+                    >
+                        📍 Навигирай ме с Google Maps
+                    </a>
+                </div>
+
+                <!-- Контейнер за вграждане на интерактивна карта -->
+                <div class="map-frame-wrapper">
+                    <!-- Картата е насочена централно към красив район в Сливен за демонстрация -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.2799627797701!2d26.32388076967822!3d42.68000349819781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a627f37d78dad1%3A0x7f540f42f0bb4adf!2z0KTQmNCg0JAg0JXQntCe0JQgLSDQpdCY0JzQmNCn0JXQodCa0J4g0KfQmNCh0KLQldCd0JU!5e0!3m2!1sen!2sbg!4v1783551106749!5m2!1sen!2sbg"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Футър -->
+        <footer>
+            <p>
+                &copy; 2026 <strong>Химическо чистене "Чисто като ново" - град Сливен</strong>.
+                Всички права запазени.
+            </p>
+            <p style="font-size: 0.8rem; opacity: 0.7">
+                Разработено с грижа и семейна традиция.
+            </p>
+        </footer>
+
+        <!-- 7. Свърване на Javascript кода от файла script.js -->
+        <script src="script.js"></script>
+    </body>
+</html>
