@@ -76,7 +76,12 @@ ul {
     font-weight: 700;
     white-space: nowrap; /* Пречи на текста да се пренесе на 2 реда */
     transition: all 0.3s ease;
+
+    display: inline-flex;  /* Позволява на иконата и текста да са един до друг */
+    align-items: center;   /* Центрира ги перфектно по вертикала */
+    gap: 8px;
 }
+
 
 .header-actions .call-btn:hover {
     background-color: #ffffff;
