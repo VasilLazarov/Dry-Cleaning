@@ -625,6 +625,10 @@ footer strong {
     color: #ffffff;
 }
 
+footer p a {
+    color: #ffffff;
+}
+
 footer p a:hover {
     color: #28ffff;
 }
