@@ -473,6 +473,7 @@ ul {
             font-size: 1rem;
             line-height: 1.7;
             margin-bottom: 15px;
+            text-align: justify;
         }
 
         .about-text-col p:last-child {
@@ -491,7 +492,7 @@ ul {
             border-radius: 16px;
             border: 1px solid #e2e8f0;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
         }
@@ -532,10 +533,15 @@ ul {
     margin: 0 auto;
 }
 
-.contacts-grid {
+/*.contacts-grid {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}*/
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
 }
 
 .info-card {
@@ -558,6 +564,7 @@ ul {
 .info-item {
     margin-bottom: 15px;
     font-size: 1rem;
+    margin-top: 5px;
 }
 
 .info-item strong {
@@ -591,11 +598,20 @@ ul {
 }
 
 /* Оптимизация на Картата за адаптивност */
+/*.map-frame-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+}*/
 .map-frame-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 75%; /* Съотношение 4:3 на телефон */
+    aspect-ratio: 4 / 3;
     border-radius: 20px;
     border: 1px solid #e2e8f0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
@@ -730,7 +746,7 @@ footer p a:hover {
 
     .hero-content p {
         font-size: 1.2rem;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-top: 40px;
     }
 
@@ -799,7 +815,7 @@ footer p a:hover {
 
 
     /* Контакти и Карта за компютър (2 колони) */
-    .contacts-grid {
+    /*.contacts-grid {
         flex-direction: row;
         align-items: stretch;
     }
@@ -810,9 +826,30 @@ footer p a:hover {
     }
 
     .map-frame-wrapper {
-        padding-top: 0; /* Махаме процентното съотношение */
-        height: auto; /* Картата се разпъва спрямо височината на съседната колона */
-    }
+        padding-top: 0; 
+        height: auto;
+    }*/
+    .contacts-grid {
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch; /* Разпъва и двата елемента напълно еднакво */
+            }
+
+            .info-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; /* Разпределя елементите по вертикала */
+                height: 100%;
+            }
+
+            .maps-action-btn {
+                margin-top: auto; /* Принуждава бутона да отиде най-долу, симетрично на картата */
+            }
+
+            .map-frame-wrapper {
+                aspect-ratio: auto; /* Спираме 4:3 съотношението */
+                height: 100%; /* Картата заема точно толкова височина, колкото и инфо картата вляво */
+                min-height: 480px; /* Задаваме елегантна минимална височина за десктоп */
+            }
 
     .maps-action-btn:hover {
         background-color: #1a9e6c;
