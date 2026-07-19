@@ -192,7 +192,7 @@ ul {
     position: relative;
     background-image:
         linear-gradient(rgba(10, 37, 64, 0.82), rgba(10, 37, 64, 0.88)),
-        url("images/background.png");
+        url("images2/background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
