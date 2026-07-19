@@ -1,6 +1,6 @@
 /* =========================================
-           1. Базови настройки и нулиране (Reset)
-           ========================================= */
+1. Reset all styles
+========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    /* ✨ РЕШЕНИЕТО НА ПРОБЛЕМА: Добавяме отстояние при превъртане, съобразено с височината на фиксирания хедър */
-    scroll-padding-top: 80px; 
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -30,8 +29,8 @@ ul {
 }
 
 /* =========================================
-           2. Хедър и Мобилна Навигация
-           ========================================= */
+2. Header and mobile navigation
+========================================= */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -52,20 +51,18 @@ ul {
 }
 
 .logo img {
-    max-height: 75px; /* Ограничава логото до елегантна височина */
-    width: auto; /* Запазва пропорциите на изображението автоматично */
-    display: block; /* Премахва дребните отстояния под картинката */
+    max-height: 75px;
+    width: auto;
+    display: block;
 }
 
-/* НОВО: Контейнерът за бутона и хамбургера */
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 15px; /* Разстояние между бутона "Звънни ни" и трите чертички */
+    gap: 15px; 
     z-index: 102;
 }
 
-/* НОВО: Стилизиране на бутона, който вече е горе вдясно */
 .header-actions .call-btn {
     background-color: #0b57d0;
     color: #ffffff !important;
@@ -74,14 +71,13 @@ ul {
     border-radius: 20px;
     font-size: 1.1rem;
     font-weight: 700;
-    white-space: nowrap; /* Пречи на текста да се пренесе на 2 реда */
+    white-space: nowrap;
     transition: all 0.3s ease;
 
-    display: inline-flex;  /* Позволява на иконата и текста да са един до друг */
-    align-items: center;   /* Центрира ги перфектно по вертикала */
+    display: inline-flex; 
+    align-items: center; 
     gap: 8px;
 }
-
 
 .header-actions .call-btn:hover {
     background-color: #ffffff;
@@ -91,7 +87,7 @@ ul {
 }
 
 .nav-menu {
-    display: none; /* Скриваме за телефон по подразбиране */
+    display: none; 
 }
 
 .menu-toggle {
@@ -114,7 +110,6 @@ ul {
     transition: all 0.3s ease;
 }
 
-/* Трансформация на хамбургера в 'Х' при отваряне */
 .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -127,7 +122,6 @@ ul {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Активно състояние на мобилното меню */
 .nav-menu.active {
     display: block;
     position: absolute;
@@ -163,17 +157,6 @@ ul {
     color: #0b57d0;
 }
 
-/* .nav-menu.active .call-btn {
-    display: inline-block;
-    background-color: #0b57d0;
-    color: #ffffff !important;
-    padding: 12px 24px;
-    border-radius: 30px;
-    width: 100%;
-    font-weight: 700;
-} */
-
-/* Стилизиране на Facebook бутона в хедъра */
 .fb-btn-header {
     display: flex;
     align-items: center;
@@ -182,36 +165,31 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #f0f2f5; /* Лек сив фон, за да изпъква */
+    background-color: #f0f2f5; 
     transition: all 0.3s ease;
     margin-top: 2px;
 }
 
-/* Контрол над размера и цвета на самото SVG */
 .fb-btn-header svg {
     width: 30px;
     height: 30px;
-    fill: #1877f2; /* Официалният син цвят на Facebook */
+    fill: #1877f2;
     transition: fill 0.3s ease;
 }
 
-/* Ефект при посочване (hover) */
 .fb-btn-header:hover {
     background-color: #1877f2;
-    /* transform: translateY(-2px); */
 }
 
 .fb-btn-header:hover svg {
-    fill: #ffffff; /* Иконката става бяла, когато фонът стане син */
+    fill: #ffffff; 
 }
 
-/* */
 /* =========================================
-3. Hero Секция (С фоново изображение)
+3. Hero section
 ========================================= */
 .hero-section {
     position: relative;
-    /* Използваме елегантно изображение на чисти и подредени блузи от Unsplash */
     background-image:
         linear-gradient(rgba(10, 37, 64, 0.82), rgba(10, 37, 64, 0.88)),
         url("images/background.png");
@@ -233,14 +211,13 @@ ul {
     margin: 0 auto;
 }
 
-/* Лого вътре в самия Hero секшън */
 .hero-logo-container {
     margin-bottom: 25px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Лимит за малък/среден екран */
+    max-width: 400px;
     min-width: 140px;
     transition: all 0.3s ease;
 }
@@ -298,7 +275,7 @@ ul {
 }
 
 /* =========================================
-4. Секция Бързина на услугите (3-те карти)
+4. Section "Services"
 ========================================= */
 .speed-section {
     padding: 40px 20px;
@@ -323,76 +300,64 @@ ul {
     margin: 0 auto 40px auto;
 }
 
+.sub-section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 50px;
+}
 
-/* Ново - неща за обработка - начало*/
-/* ✨ НОВО: Подзаглавие за отделните подсекции в "Какво предлагаме" */
-        .sub-section-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 25px;
-            text-align: center;
-        }
+.item-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
 
-        /* ✨ НОВО: Решетка, която подрежда 9-те изделия */
-        .items-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* 1 колона на мобилен по подразбиране */
-            gap: 15px;
-            margin-bottom: 50px;
-        }
+.item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(11, 87, 208, 0.08);
+    border-color: #0b57d0;
+}
 
-        /* ✨ НОВО: Стил за единична карта на изделие */
-        .item-card {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 16px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-        }
+.item-icon {
+    font-size: 1.6rem;
+    background-color: #f0f7ff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
 
-        /* Ефект при посочване на картата */
-        .item-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(11, 87, 208, 0.08);
-            border-color: #0b57d0;
-        }
+.item-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+    line-height: 1.4;
+}
 
-        /* ✨ НОВО: Стилизиране на кръгчето с иконата */
-        .item-icon {
-            font-size: 1.6rem;
-            background-color: #f0f7ff;
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            flex-shrink: 0; /* Пречи на кръга да се свива при по-дълъг текст */
-        }
-
-        /* ✨ НОВО: Стил за текста до иконата */
-        .item-text {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #334155;
-            line-height: 1.4;
-        }
-
-        /* ✨ НОВО: Елегантна разделителна линия между двете подсекции */
-        .section-divider {
-            height: 2px;
-            background-color: #e4e8ec;
-            margin: 20px auto;
-            max-width: 85%;
-        }
-
-/* Ново - неща за обработка - край*/
+.section-divider {
+    height: 2px;
+    background-color: #e4e8ec;
+    margin: 20px auto;
+    max-width: 85%;
+}
 
 .speed-cards-grid {
     display: flex;
@@ -430,102 +395,88 @@ ul {
 }
 
 /* =========================================
-5. За нас
+5. About us
 ========================================= */
+.about-section {
+    background-color: #edf2f7;
+    padding: 40px 20px;
+}
 
-        .about-section {
-            /* background-color: #edf2f7; */
-            background-color: #edf2f7;
-            /*background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); */
-            /*background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%); */
-            padding: 40px 20px;
-        }
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-        .about-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
 
-        .about-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            margin-top: 20px;
-        }
+.about-text-col {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
 
-        .about-text-col {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-        }
+.about-text-col h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
 
-        .about-text-col h3 {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #0f172a;
-            margin-bottom: 15px;
-        }
+.about-text-col p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
 
-        .about-text-col p {
-            color: #475569;
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+.about-text-col p:last-child {
+    margin-bottom: 0;
+}
 
-        .about-text-col p:last-child {
-            margin-bottom: 0;
-        }
+.about-stats-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-        .about-stats-col {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+.stat-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
 
-        .stat-card {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 16px;
-            border: 1px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-        }
+.stat-card .stat-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
 
-        .stat-card .stat-icon {
-            font-size: 2rem;
-            line-height: 1;
-        }
+.stat-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
 
-        .stat-card h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 5px;
-        }
-
-        .stat-card p {
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-
-
-
-
-
-
-
-
-
-
+.stat-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
 
 /* =========================================
-6. Карта и Контакти
+6. Contacts
 ========================================= */
 .contacts-section {
     padding: 40px 20px;
@@ -533,11 +484,6 @@ ul {
     margin: 0 auto;
 }
 
-/*.contacts-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}*/
 .contacts-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -580,7 +526,21 @@ ul {
     color: #475569;
 }
 
-/* Бутон за отваряне в Google Maps приложението */
+.info-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-phone svg {
+    width: 20px;
+    height: 20px;
+    fill: #ff0000;
+    stroke: #000000;
+    stroke-width: 0.6px;
+    transition: fill 0.3s ease;
+}
+
 .maps-action-btn {
     display: inline-flex;
     align-items: center;
@@ -597,16 +557,6 @@ ul {
     transition: all 0.3s ease;
 }
 
-/* Оптимизация на Картата за адаптивност */
-/*.map-frame-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 75%;
-    border-radius: 20px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
-}*/
 .map-frame-wrapper {
     position: relative;
     overflow: hidden;
@@ -627,7 +577,7 @@ ul {
 }
 
 /* =========================================
-7. Футър
+7. Footer
 ========================================= */
 footer {
     background-color: #0f172a;
@@ -654,12 +604,10 @@ footer p a:hover {
     color: #28ffff;
 }
 
-/* */
 /* =========================================
-8. НАДГРАЖДАНЕ ЗА КОМПЮТЪР (min-width: 900px)
+8. Changes for PC - when screen pixels > 900px
 ========================================= */
 @media (min-width: 900px) {
-    /* Меню за компютър */
     .menu-toggle {
         display: none;
     }
@@ -693,22 +641,12 @@ footer p a:hover {
         color: #0b57d0;
     }
 
-    /* .nav-menu .call-btn {
-        background-color: #0b57d0;
-        color: white !important;
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-weight: 600;
-    } */
-
-    /* НОВО: Подреждаме Хедъра на компютър: Лого(вляво) -> Меню(в средата) -> Бутон(вдясно) */
     .main-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    /* Свойството order подрежда елементите визуално */
     .logo {
         order: 1;
     }
@@ -721,7 +659,6 @@ footer p a:hover {
         order: 3;
     }
 
-    /* Ефекти при посочване на бутона на компютър */
     .header-actions .call-btn:hover {
         background-color: #ffffff;
         color: #0b57d0 !important;
@@ -729,7 +666,6 @@ footer p a:hover {
         border-radius: 20px;
     }
 
-    /* Hero за компютър */
     .hero-section {
         padding: 40px 40px;
     }
@@ -737,7 +673,7 @@ footer p a:hover {
     .hero-logo-container {
         padding: 1px 32px;
         margin-bottom: 30px;
-        max-width: 700px; /* По-голям и впечатляващ размер за настолни компютри */
+        max-width: 700px;
     }
 
     .hero-content h1 {
@@ -756,29 +692,11 @@ footer p a:hover {
         gap: 20px;
     }
 
-    .hero-buttons .btn-primary,
-    .hero-buttons .btn-secondary {
-        width: auto;
+    .items-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
-    .hero-buttons .btn-primary:hover {
-        background-color: #0045b4;
-        transform: translateY(-2px);
-    }
-
-    .hero-buttons .btn-secondary:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
-    }
-
-    /* Ново за материи*/
-    /* ✨ НОВО: На компютър изделията се подреждат в 3 равни колони */
-            .items-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-            }
-
-    /* Секция бързина за компютър (3 колони) */
     .speed-cards-grid {
         flex-direction: row;
         justify-content: space-between;
@@ -793,63 +711,41 @@ footer p a:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     }
 
-
-    /* ========================================================= */
-            /* ✨ АДАПТИВНИ НОВИ СТИЛОВЕ: "За нас" (Компютърна версия)  */
-            /* ========================================================= */
-            .about-grid {
-                flex-direction: row;
-                align-items: stretch;
-            }
-
-            .about-text-col,
-            .about-stats-col {
-                flex: 1;
-            }
-            .about-stats-col {
-                justify-content: space-between;
-                gap: 0;
-            }
-            /* ========================================================= */
-
-
-
-    /* Контакти и Карта за компютър (2 колони) */
-    /*.contacts-grid {
+    .about-grid {
         flex-direction: row;
         align-items: stretch;
     }
 
-    .info-card,
-    .map-frame-wrapper {
+    .about-text-col,
+    .about-stats-col {
         flex: 1;
+    }
+    .about-stats-col {
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    .contacts-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .maps-action-btn {
+        margin-top: auto;
     }
 
     .map-frame-wrapper {
-        padding-top: 0; 
-        height: auto;
-    }*/
-    .contacts-grid {
-                grid-template-columns: 1fr 1fr;
-                align-items: stretch; /* Разпъва и двата елемента напълно еднакво */
-            }
-
-            .info-card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between; /* Разпределя елементите по вертикала */
-                height: 100%;
-            }
-
-            .maps-action-btn {
-                margin-top: auto; /* Принуждава бутона да отиде най-долу, симетрично на картата */
-            }
-
-            .map-frame-wrapper {
-                aspect-ratio: auto; /* Спираме 4:3 съотношението */
-                height: 100%; /* Картата заема точно толкова височина, колкото и инфо картата вляво */
-                min-height: 480px; /* Задаваме елегантна минимална височина за десктоп */
-            }
+        aspect-ratio: auto; 
+        height: 100%; 
+        min-height: 480px; 
+    }
 
     .maps-action-btn:hover {
         background-color: #1a9e6c;
@@ -859,8 +755,7 @@ footer p a:hover {
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-            /* На среден екран (таблет) изделията се подреждат в 2 колони */
-            .items-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
