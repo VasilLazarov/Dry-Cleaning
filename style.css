@@ -59,7 +59,7 @@ ul {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
     z-index: 102;
 }
 
@@ -74,8 +74,8 @@ ul {
     white-space: nowrap;
     transition: all 0.3s ease;
 
-    display: inline-flex; 
-    align-items: center; 
+    display: inline-flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -87,7 +87,7 @@ ul {
 }
 
 .nav-menu {
-    display: none; 
+    display: none;
 }
 
 .menu-toggle {
@@ -165,7 +165,7 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #f0f2f5; 
+    background-color: #f0f2f5;
     transition: all 0.3s ease;
     margin-top: 2px;
 }
@@ -182,7 +182,7 @@ ul {
 }
 
 .fb-btn-header:hover svg {
-    fill: #ffffff; 
+    fill: #ffffff;
 }
 
 /* =========================================
@@ -526,6 +526,7 @@ ul {
     color: #475569;
     text-align: center;
     align-items: center;
+    margin-left: 5px;
 }
 
 .info-phone {
@@ -726,7 +727,7 @@ footer p a:hover {
         justify-content: space-between;
         gap: 0;
     }
-    
+
     .contacts-grid {
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
@@ -744,9 +745,9 @@ footer p a:hover {
     }
 
     .map-frame-wrapper {
-        aspect-ratio: auto; 
-        height: 100%; 
-        min-height: 480px; 
+        aspect-ratio: auto;
+        height: 100%;
+        min-height: 480px;
     }
 
     .maps-action-btn:hover {
