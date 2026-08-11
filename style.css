@@ -525,6 +525,7 @@ ul {
 .info-item p {
     color: #475569;
     text-align: center;
+    align-items: center;
 }
 
 .info-phone {
